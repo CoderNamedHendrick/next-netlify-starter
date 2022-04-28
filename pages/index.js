@@ -14,11 +14,11 @@ export default function Home() {
     (function() {
   function onTidioChatApiReady() {
     // Code after chat loaded
-  }
-  if (window.tidioChatApi) {
+    if (window.tidioChatApi) {
     window.tidioChatApi.on("ready", onTidioChatApiReady);
   } else {
     document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+  }
   }
 })();
     </script>
