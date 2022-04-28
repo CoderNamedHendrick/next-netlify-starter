@@ -10,16 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
     <script src="//code.tidio.co/sddr9cnjk4ydmxtmzheha5kmaj7xhf2h.js" async></script>
       </Head>
-    (function () {
-    function onTidioChatApiReady() {
-        window.tidioChatApi.open();
-    }
-    if (window.tidioChatApi) {
-        window.tidioChatApi.on('ready', onTidioChatApiReady);
-    } else {
-        document.addEventListener('tidioChat-ready', onTidioChatApiReady);
-    }
-})();
+    <a href="#" onclick="tidioChatApi.open()">Open chat!</a>
     </div>
   )
 }
