@@ -11,7 +11,7 @@ export default function Home() {
     <script src="//code.tidio.co/sddr9cnjk4ydmxtmzheha5kmaj7xhf2h.js" async></script>
       </Head>
     const initChat = () => {
-      tidioChatApi.open();
+      window.tidioChatApi.open();
     }
     
     (function () {
