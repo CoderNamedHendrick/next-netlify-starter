@@ -33,7 +33,7 @@ export default function Home() {
         tidioBtn.click();
       }
     });
-  }, []);
+  });
 
   return (
     <div className="container">
