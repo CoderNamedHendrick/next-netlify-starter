@@ -29,7 +29,7 @@ export default function Home() {
     waitForElm('#tidio-chat-iframe').then((elm) => {
       const tidioBtn = elm.contentWindow.document.getElementById("button-body");
 
-      if (typeof tidioBtn !== 'undefined') {
+      if (tidioBtn) {
         tidioBtn.click();
       }
     });
