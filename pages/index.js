@@ -27,7 +27,11 @@ export default function Home() {
 
   useEffect(() => {
     waitForElm('#tidio-chat-iframe').then((elm) => {
-      elm.contentWindow.document.getElementById("button-body").click();
+      const tidioBtn = elm.contentWindow.document.getElementById("button-body");
+
+      if (tidioBtn !== 'undefined') {
+        tidioBtn.click();
+      }
     });
   }, []);
 
@@ -36,10 +40,6 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
-        {/* <script
-          src="//code.tidio.co/sddr9cnjk4ydmxtmzheha5kmaj7xhf2h.js"
-          async
-        ></script> */}
       </Head>
       <Script
         src="//code.tidio.co/sddr9cnjk4ydmxtmzheha5kmaj7xhf2h.js"
